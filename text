@@ -1,0 +1,185 @@
+HTML Cheat Sheet:
+
+
+<!DOCTYPE html> - Denotes doc as HTML.
+
+<html></html> - Start of HTML code.
+
+<head></head> - Denotes info about doc like charset, title, meta tags, links, favicons.
+
+<meta> - Describes metadata within a doc.
+
+<title></title> - Gives title to webpage.
+
+<body></body> - Element contains all the contents of an HTML document, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.
+
+<h1></h1> -> <h6></h6> - Heading tags, lower number is lower size and importance. 
+
+<p></p> - Paragraph tag, adds text to doc.
+
+<b></b> - Creates bold text.
+
+<i></i> - Creates italicized text. Can be used with <b>.
+
+</hr> - Horizontal Rule, creates a line.
+
+</br> - Introduces a break in the document.
+
+<big></big> and <small></small> - Creates big text, and small text.
+
+<sub></sub> and <sup></sup> - Subscript and superscript tags. Creates subscript and superscript.
+
+Basic CSS can be used to style certain elements.
+
+-------------------------------------------------
+This attribute can be put in a different text elements, like paragraph and headers. You can also put these tags in containers, like the body tag.
+
+style="color:red; background-color:green;"
+
+Example: 
+
+<p style="color:red; background-color:green;">This text will be stylized.</p>
+
+Known style descriptors:
+
+color: {insert color}; - Colors text. CSS Color Names: https://www.w3schools.com/cssref/css_colors.asp
+
+background-color: {insert color}; - Creates backround color, same color codes can be applied from color.
+-------------------------------------------------
+
+Formatting Tags:
+
+<nav></nav> - Lays out navigation links for your website.
+
+<header></header> - Lays out the header content of the website.
+
+<main></main> - The main content of the website goes here.
+
+<footer></footer> - Self explanatory. Lays out a footer
+
+<article></article> - Tag specifies independent, self-contained content.
+
+<section></section> - Defines a section, best used with articles.
+
+<aside></aside> - Aside lays out content like ads, definations, and any content that isn't related directly to the website.
+
+Links:
+
+<a href="link;usehttps">Name of Link</a> - Creates a link, you can link in the website directory by using /whatever. Formatting such as headers and paragraph tags can be used in the name section.
+
+<a href="link" target=_blank></a> - Creates link in a new tab.
+
+Images:
+
+<img src="link"/> - Most basic way of inserting an image. Src can be pointed to external url or website resources.
+
+<img src="link" alt="alt text"/> - Image with alt atribute, is a fail safe for when images get broken. It displays test. Can be used as error test or description of image.
+
+<img width="" height="" src="link"/> - Resizes an image to a certain amount of pixels. Better to scale to the image aspect ratio. If only one attribute is given like only width or only height, HTML will set the missing width/height value to the image's aspect ratio.
+
+<a href="https://www.onlygfx.com/wp-content/uploads/2018/09/4-clipart-sun-2.png">
+  <img width="100" height="100" src="/water.ico" alt="Image not found!"/>
+</a>  - Makes a clickable image by inserting a link to an image.
+
+Videos:
+
+<video src="videoplayback.mp4" controls></video> - Inserts a video locally with video controls.
+
+<video src="videoplayback.mp4" controls height="num" width="num"></video> - Gives a custom size to video.
+
+<video> attribute: loop - Loops video when you get to the end.
+
+<video> attribute: autoplay - Automatically plays the video when loaded.
+
+<video> attribute: poster="" - Link a thumbnail for the video.
+
+
+Lists:
+
+<ul></ul> ; attributes: <li>Name</li>, type="" - Creates a list, the li tag is used for actual list items. UL tags are for lists with no particular order, so they have bullet points.
+
+<ol></ol> ; attributes: <li>Name</li>, type="" - Creates a list, the li tag is used for actual list items. OL tags are for lists with particular order, so they have numbers, roman numerals, and numbers. You can specifiy the type using the type attribute.
+
+<dl></dl> ; attributes: <dd>Description</dd>, <dt>Term</dt> type="" - Creates a list, the dd tag is used for actual list items. OL tags are for lists that require description of items, so they have numbers, roman numerals, and numbers. You can specifiy the type using the type attribute. The items are added usinf dt, and can be defined using dd.
+
+You can nest lists. You can put a list inside a list.
+
+<ol type="I">
+  <li>Apples
+    <ol type="I">
+      <li>3</li> 
+    </ol>
+    </li>
+    <li>Oranges</li>
+    <li>Bananas</li>
+</ol> 
+
+Tables:
+
+<table>
+  <thead>
+    <caption><h2>Numbers</h2></caption>
+      <tr>
+        <th>num1</th>
+        <th>num2</th>
+        <th>num3</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2">one</td>
+      <td>two</td>
+      <td>three</td>
+    </tr>
+    <tr>
+      <td>four</td>
+      <td>five</td>
+      <td>six</td>
+    </tr>
+  </tbody>
+</table>
+
+<table></table> - Creates a table.
+
+<tr></tr> - Defines a row of the table.
+
+<td></td> - Defines a piece of data within a table.
+
+<caption></caption> - Defines a title for the table.
+
+attribute: <td colspan=""> - Colspan allows you to shift table data a certain number of columns.
+
+<th></th> - Used to define headers of the table for the data to categorize.
+
+<thead></thead> - The table head is an organizational tag used to define the head of the table, things that are not pure table data, such as table headers and table captions.
+
+<tbody></tbody> - The table body is an organizational tag used to define the body of the table, things that pure table data, such as table rows (although tr's can be used in head) and table data.
+
+------------------------------------------------------------
+
+Div and Span:
+
+<div></div> - Is a block code container.
+<span></span> - Is an inline code container.
+
+Input and Forms:
+
+<input type=""/> - Defines a type of interactble input for the user. There are many different types. All can be found here: https://www.w3schools.com/tags/att_input_type.asp
+
+<form></form> - A wrapper/container for input elements.
+
+Attributes:
+
+value="" - Gives a predetermined value to a text element.
+name="" - Gives a name to the element.
+
+<textarea></textarea> - Makes a large resizable text area. Can be resized.
+
+Attributes:
+
+rows="" cols="" - Resizes textarea to fit a certain size.
+
+iFrames:
+
+<iframe src=""></iframe> - Creates an iFrame. The width and height attribute can be used to rescale it. Another attribute is frameborder="", which allows you to set the size of the frame border.
+
